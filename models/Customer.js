@@ -26,7 +26,7 @@ class Customer {
       errors.push('手机号格式无效');
     }
     
-    if (this.email && !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(this.email)) {
+    if (this.email && !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$/.test(this.email)) {
       errors.push('邮箱格式无效');
     }
     
